@@ -1,0 +1,6 @@
+# Somente para a "prova negativa": expõe as instâncias diretamente nas portas 3001-3003.
+# Uso: docker compose -f docker-compose.yml -f docker-compose.debug.yml up -d
+services:
+  app1: { ports: ["3001:3000"] }
+  app2: { ports: ["3002:3000"] }
+  app3: { ports: ["3003:3000"] }
